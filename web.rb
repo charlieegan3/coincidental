@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  case rand(1..10)
+  case rand(1..11)
   when 1..4
     redirect 'http://en.wikipedia.org/wiki/Special:Random'
   when 5..7
@@ -12,5 +12,8 @@ get '/' do
     redirect 'http://www.imdb.com/random/name'
   when 10
     redirect 'http://www.imdb.com/random/title'
+  end
+  when 11
+    redirect 'http://apod.nasa.gov/apod/astropix.html'
   end
 end
