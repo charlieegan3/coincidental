@@ -12,7 +12,6 @@ get '/' do
     redirect 'http://www.imdb.com/random/name'
   when 10
     redirect 'http://www.imdb.com/random/title'
-  end
   when 11
     redirect 'http://apod.nasa.gov/apod/astropix.html'
   end
